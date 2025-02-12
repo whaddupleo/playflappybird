@@ -31,9 +31,9 @@ let topPipeImg;
 let bottomPipeImg;
 
 //physics
-let velocityX =-2;//pipes moving to the left by velocity of -2
+let velocityX =-4;//pipes moving to the left by velocity of -2
 let velocityY = 0;
-let gravity = 0.2;
+let gravity = 0.4;
 
 let gameOver = false;
 let score = 0;
@@ -75,7 +75,7 @@ window.onload = function() {
     bottomPipeImg.src = "./images/bottompipe.png"
 
     requestAnimationFrame(update);
-    setInterval(placePipes, 1500); //run 'placePipes' function every 1.5s
+    setInterval(placePipes, 1000); //run 'placePipes' function every 1.5s
     document.addEventListener("keydown", moveBird);
 }
 
